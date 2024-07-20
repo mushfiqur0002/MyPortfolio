@@ -43,9 +43,14 @@
       margin: 0 5%;
     }
     .pic-container {
+      position: flex;
       width: 275px;
       height: 275px;
       margin: 0 auto 2rem;
+    }
+    .profile-pic{
+      width: 215px;
+      height: 275px;
     }
     .about-containers {
       margin-top: 0;
@@ -104,6 +109,11 @@
     }
     .text-container {
       text-align: justify;
+    }
+
+    .profile-pic{
+      width: 135px;
+      height: 175px;
     }
   }
   
