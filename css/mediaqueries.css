@@ -47,6 +47,7 @@
       width: 275px;
       height: 275px;
       margin: 0 auto 2rem;
+      justify-content: center;
     }
     .profile-pic{
       width: 215px;
