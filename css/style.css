@@ -7,6 +7,10 @@
   padding: 0;
 }
 
+*,*::before, *::after{
+  box-sizing:border-box;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -53,9 +57,68 @@ a {
 
 a:hover {
   color: grey;
-  text-decoration: underline;
-  text-underline-offset: 1rem;
   text-decoration-color: rgb(181, 181, 181);
+}
+
+.hover-effect{
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  padding: 0.5rem 0.75rem;
+}
+
+.hover-effect span::before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0%;
+  width: 2px;
+  background-color: rgb(181, 181, 181);
+  transition: height 0.5s ease-in-out ;
+}
+.hover-effect span::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 0%;
+  width: 2px;
+  background-color: rgb(181, 181, 181);
+  transition: height 0.5s ease-in-out ;
+}
+
+.hover-effect::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color:rgb(181, 181, 181);
+  transform: translateX(-105%);
+  transition: transform 0.5s ease-in-out;
+}
+.hover-effect::after{
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 2px;
+  width: 100%;
+  background-color: rgb(181, 181, 181);
+  transform: translateX(105%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.hover-effect:hover::after,
+.hover-effect:hover::before{
+  transform: translateY(0);
+}
+
+.hover-effect:hover span::before,
+.hover-effect:hover span::after{
+  height: 100%;
 }
 
 .logo {
@@ -298,6 +361,9 @@ section {
   display: flex;
 }
 
+.about-containers .icon:hover{
+  cursor: default;
+}
 .about-pic {
   border-radius: 2rem;
 }
@@ -450,4 +516,3 @@ footer {
 footer p {
   text-align: center;
 }
-
