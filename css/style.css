@@ -75,7 +75,7 @@ a:hover {
   left: 0;
   height: 0%;
   width: 2px;
-  background-color: #22577a;
+  background-color: #27374D;
   transition: height 0.5s ease-in-out ;
 }
 .hover-effect span::after{
@@ -85,7 +85,7 @@ a:hover {
   right: 0;
   height: 0%;
   width: 2px;
-  background-color: #087e8b;
+  background-color: #22577a;
   transition: height 0.5s ease-in-out ;
 }
 
@@ -96,7 +96,7 @@ a:hover {
   bottom: 0;
   height: 2px;
   width: 100%;
-  background-color:#38a3a5;
+  background-color:#526D82;
   transform: translateX(-105%);
   transition: transform 0.5s ease-in-out;
 }
@@ -107,7 +107,7 @@ a:hover {
   top: 0;
   height: 2px;
   width: 100%;
-  background-color: #80ed99;
+  background-color: #9DB2BF;
   transform: translateX(105%);
   transition: transform 0.5s ease-in-out;
 }
@@ -142,11 +142,11 @@ a:hover {
 :root{
   --gradient:linear-gradient(
       45deg,
+       #27374D,
        #22577a,
-       #087e8b,
-       #38a3a5,
-       #80ed99,
-       #c7f9ee
+       #526D82,
+       #9DB2BF,
+       #DDE6ED
   );
 
   --gradient_2:linear-gradient(
