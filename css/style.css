@@ -61,6 +61,8 @@ a:hover {
   text-decoration-color: rgb(115, 115, 115);
 }
 
+/* Hover effect for windows nav bar list items */
+
 .hover-effect{
   position: relative;
   display: inline-block;
@@ -157,6 +159,7 @@ a:hover {
     #fff05a
   );
 }
+
 #profile{
   z-index: 10;
   background-image: var(--gradient);
@@ -186,7 +189,7 @@ a:hover {
   cursor: default;
 }
 
-/* hm MENU */
+/* HM MENU */
 
 #hm-nav {
   display: none;
@@ -217,7 +220,7 @@ a:hover {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.8);
   width: fit-content;
   max-height: 0;
   overflow: hidden;
@@ -234,8 +237,13 @@ a:hover {
   transition: all 0.3 ease-in-out;
 }
 
+
 .menu-links li {
   list-style: none;
+}
+
+.menu-links a:hover{
+  background-color: #22577a;
 }
 
 .menu-links.open {
